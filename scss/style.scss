@@ -1,0 +1,241 @@
+body {
+    background-color: rgb(37, 56, 162);
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0px 80px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    width: calc(100% - 40px);
+    padding-top: 50px;
+    position: relative;
+    
+    &__logo {
+        
+        &__menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        &__style {
+            font-family: 'Montserrat';
+            color: white;
+            font-size: 30px;
+        }
+    }
+
+    &__nav {
+        
+        &__list {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+        }
+    }
+
+    &__svg {
+
+        &__style {
+            margin-top: -300px;
+            width: 900px;
+            height: 700px;
+            object-fit: cover;
+            transform: rotate(90deg);
+            position: absolute;
+            top: 0;
+            right: -380px;
+            z-index: -100;
+        }
+    }
+
+    &__content {
+        margin-top: 150px;
+
+        &__title {
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            font-family: 'Montserrat';
+        }
+
+        &__text {
+            color: white;
+            font-size: 20px;
+            font-family: 'Hind Madurai';
+            width: 1250px;
+        }
+    }
+}
+
+.list__item {
+    margin-left: 60px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Montserrat';
+}
+
+.text__mark {
+    background-color: rgb(43, 160, 255);
+    font-weight: bold;
+    color: white;
+}
+
+.technologies {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &__title {
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Montserrat';
+        position: absolute;
+        right: 0;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 150px;
+    }
+}
+
+.icon {
+    border-radius: 100%;
+    object-fit: cover;
+    transition: all 0.5s;
+    background-color: white;
+
+    &:hover {
+        transform: scale(1.15);
+        cursor: pointer;
+    }
+}
+
+.services {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Montserrat';
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+
+        &__item {
+            width: calc(100% / 3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            transition: all 0.5s;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.15);
+            }
+        }
+    }
+
+    &__image {
+        border-radius: 100%;
+    }
+
+    &__text {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 18px;
+        color: white;
+        font-family: 'Hind Madurai';
+    }
+}
+
+
+.realisations {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &__title {
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Montserrat';
+        position: absolute;
+        right: 0;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 150px;
+        gap: 100px;
+
+        &__icon {
+            width: calc(100% / 3 - 200px);
+            height: 200px;
+            background-color: white;
+            border-radius: 40%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.15);
+            }
+        }
+    }
+
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 40%;
+        object-fit: cover;
+    }
+    
+    &__text {
+        position: absolute;
+        z-index: 999;
+        color: white;
+        font-size: 35px;
+        padding: 5px;
+        font-weight: bold;
+        font-family: 'Montserrat';
+        background-color: rgb(37, 56, 162);
+        font-style: italic;
+    }
+}
+
+
