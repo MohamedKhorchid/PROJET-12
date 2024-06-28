@@ -5,7 +5,7 @@ const projects = {
         image: "./images/booki.png",
         skills: "HTML, CSS, Figma, W3C",
         description: "Booki est une agence de voyage pour laquelle j'étais chargé d'intégrer la page d'accueil du site. Ma mission principale était de travailler sur la version responsive du site. J'ai également ajouté des animations qui n'étaient pas forcémment demandées mais qui venaient compléter le design final du site.",
-        github: "",
+        github: "https://github.com/MohamedKhorchid/PROJET-3",
     },
     project2: {
         title: "Ohmyfood",
@@ -22,15 +22,15 @@ const projects = {
         github: "https://github.com/MohamedKhorchid/PROJET-6",
     },
     project4: {
-        title: "Menu Maker",
+        title: "Nina Carducci",
         image: "",
-        skills: "Gestion de projet, Méthodologie Agile",
-        description: "Menu Maker est un nouveau site qui va être lancé par l'entreprise Qwenta. Il devra permettre aux restaurateurs inscrits de créer et partager facilement les menus de leur établissements en ligne. Cette fois-ci, j'ai été chargé de planifier le développement du site : j'ai rédigé les spécifications techniques sur la base des spécifications fonctionnelles et j'ai créé le kanban associé au projet.",
-        github: "",
+        skills: "SEO, débuggage",
+        description: "Nina Carducci est une photographe profesionnelle pour qui j'ai optimisé le site web à l'aide de l'outil LightHouse, afin de lui permettre de trouver plus de clients.",
+        github: "https://github.com/MohamedKhorchid/PROJET99",
     },
     project5: {
         title: "Kasa",
-        image: "",
+        image: "./images/Capture d'écran 2024-06-27 191353.png",
         skills: "JavaScript, React, Figma",
         description: "Kasa est un site proposant des hébergements à la location. J'ai été chargé de créer le site avec React à partir de maquettes fournies par le client. Le rendu final permet de naviguer entre les différentes pages du site et de voir tous les détails liés à un logement en particulier.",
         github: "https://github.com/MohamedKhorchid/PROJET-8",
@@ -51,10 +51,10 @@ function createRealisationsModal(title, image, skills, description, github) {
     modal.innerHTML = `<div class="modal__content">
     <button class="modal__close__btn" id="btnModalClose"><i class="fa-solid fa-xmark"></i></button>
     <h2 class="modal__title">${title}</h2>
+    <div class="modal__skills">${skills}</div>
     <div class="modal__image">
         <img class="modal__image__style" src="${image}">
     </div>
-    <div class="modal__skills">${skills}</div>
     <div class="modal__info">${description}</div>
     <div class="modal__github">
         <a href="${github}" class="modal__github__link">Lien vers le code du projet</a>

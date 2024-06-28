@@ -1,8 +1,10 @@
-body {
-    background-color: rgb(37, 56, 162);
+* {
     margin: 0;
-    overflow-x: hidden;
-    padding: 0px 80px;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 img {
@@ -10,80 +12,82 @@ img {
     height: 150px;
 }
 
-a {
-    text-decoration: none;
+body {
+    background-color: rgb(37, 56, 162);
+    margin: 0;
+    padding: 50px 20px 0px 20px;
+    overflow-x: hidden;
 }
 
+
 .header {
-    width: calc(100% - 40px);
-    padding-top: 50px;
-    position: relative;
+    width: 100%;
+    padding: 25px 0px;
     
     &__logo {
-        
+        margin-bottom: 20px;
+
         &__menu {
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: flex-start;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 70px;
         }
 
         &__style {
             font-family: 'Montserrat';
             color: white;
-            font-size: 30px;
+            font-size: 40px;
         }
     }
 
     &__nav {
-        
+
         &__list {
             display: flex;
             flex-direction: row;
+            align-items: center;
             list-style-type: none;
-        }
-    }
-
-    &__svg {
-
-        &__style {
-            margin-top: -300px;
-            width: 900px;
-            height: 700px;
-            object-fit: cover;
-            transform: rotate(90deg);
-            position: absolute;
-            top: 0;
-            right: -380px;
-            z-index: -100;
+            padding: 0;
         }
     }
 
     &__content {
-        margin-top: 150px;
-
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
         &__title {
             color: white;
-            font-size: 40px;
+            font-size: 20px;
             font-weight: bold;
             font-family: 'Montserrat';
+            text-align: center;
         }
-
+    
         &__text {
             color: white;
-            font-size: 20px;
+            font-size: 16px;
             font-family: 'Hind Madurai';
-            width: 1250px;
+            text-align: center;
+            margin-top: 20px;
+            width: calc(100% - 20px);
         }
     }
 }
 
 .list__item {
-    margin-left: 60px;
     color: white;
-    font-size: 20px;
+    font-size: 10px;
     font-weight: bold;
     font-family: 'Montserrat';
+    margin-right: 10px;
+    background-color: rgb(43, 160, 255);
+    padding: 5px 5px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .text__mark {
@@ -93,26 +97,24 @@ a {
 }
 
 .technologies {
-    margin-top: 100px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    position: relative;
-
+    margin-top: 50px;
+    
     &__title {
         color: white;
-        font-size: 30px;
+        font-size: 20px;
         font-weight: bold;
         font-family: 'Montserrat';
-        position: absolute;
-        right: 0;
+        margin-bottom: 40px;
     }
-
+    
     &__list {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin-top: 150px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -121,7 +123,8 @@ a {
     object-fit: cover;
     transition: all 0.5s;
     background-color: white;
-
+    margin-bottom: 30px;
+    
     &:hover {
         transform: scale(1.15);
         cursor: pointer;
@@ -129,31 +132,34 @@ a {
 }
 
 .services {
-    margin-top: 150px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-
+    margin-top: 50px;
+    
     &__title {
         color: white;
-        font-size: 30px;
+        font-size: 20px;
         font-weight: bold;
         font-family: 'Montserrat';
+        margin-bottom: 40px;
     }
-
+    
     &__list {
         display: flex;
-        flex-direction: row;
-        margin-top: 50px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         &__item {
-            width: calc(100% / 3);
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             transition: all 0.5s;
             cursor: pointer;
-
+            margin-bottom: 50px;
+    
             &:hover {
                 transform: scale(1.15);
             }
@@ -162,53 +168,51 @@ a {
 
     &__image {
         border-radius: 100%;
+        background-color: white;
     }
-
+    
     &__text {
         text-align: center;
-        margin-top: 50px;
+        margin-top: 20px;
         font-size: 18px;
         color: white;
         font-family: 'Hind Madurai';
     }
 }
 
-
 .realisations {
-    margin-top: 100px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    position: relative;
-
+    margin-top: 50px;
+    
     &__title {
         color: white;
-        font-size: 30px;
+        font-size: 20px;
         font-weight: bold;
         font-family: 'Montserrat';
-        position: absolute;
-        right: 0;
+        margin-bottom: 40px;
     }
-
+    
     &__list {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
-        margin-top: 150px;
-        gap: 100px;
+        align-items: center;
 
         &__icon {
-            width: calc(100% / 3 - 200px);
+            width: calc(100% - 150px);
             height: 200px;
             background-color: white;
             border-radius: 40%;
-            position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
             transition: all 0.5s;
             cursor: pointer;
-
+            position: relative;
+            margin-bottom: 30px;
+    
             &:hover {
                 transform: scale(1.15);
             }
@@ -224,12 +228,12 @@ a {
         border-radius: 40%;
         object-fit: cover;
     }
-    
+        
     &__text {
         position: absolute;
         z-index: 3;
         color: white;
-        font-size: 35px;
+        font-size: 22px;
         padding: 5px;
         font-weight: bold;
         font-family: 'Montserrat';
@@ -238,64 +242,58 @@ a {
     }
 }
 
-
 .contact {
-    margin-top: 100px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    position: relative;
-
+    margin-top: 50px;
+    
     &__title {
         color: white;
-        font-size: 30px;
+        font-size: 20px;
         font-weight: bold;
         font-family: 'Montserrat';
-        position: absolute;
-        left: 0;
+        margin-bottom: 25px;
     }
-
+    
     &__div {
-        margin-top: 100px;
         display: flex;
         justify-content: center;
-
+    
         &__text {
             color: white;
-            font-size: 20px;
+            font-size: 18px;
             font-family: 'Hind Madurai';
-            width: 540px;
             text-align: center;
         }
     }
 }
 
 .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 150px;
     margin-bottom: 50px;
-
-    &__content {
+    width: 100%;
+    position: relative;
         
+    &__content {
+    
         &__text {
             color: white;
             font-size: 20px;
             font-family: 'Hind Madurai';
-            width: 520px;
+            width: 100%;
             text-align: center;
-            position: relative;
-
-            &::before {
-                content: "";
-                width: 100%;
-                height: 1px;
-                background-color: white;
-                position: absolute;
-                top: -50px;
-                left: 0;
-            }
         }
+    }
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: white;
+        position: absolute;
+        top: -50px;
+        left: 0;
     }
 }
 
@@ -308,62 +306,227 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
 	background-color: rgba(0, 0, 0, .5);
 	z-index: 900;
+
+    &__content {
+        padding: 30px 30px;
+        border-radius: 10px;
+        background: white;
+        z-index: 999;
+        visibility: visible;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__close__btn {
+        width: 50px;
+        height: 50px;
+        border: none;
+        background-color: white;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+
+    &__title {
+        color: black;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        text-align: center;
+        font-size: 25px;
+        color: rgb(37, 56, 162);
+        width: 400px;
+    }
+
+    &__info {
+        text-align: center;
+        width: 300px;
+        background-color: rgb(37, 56, 162);
+        border-radius: 10px;
+        font-family: 'Hind Madurai';
+        color: white;
+        font-weight: 500;
+        font-size: 18px;
+        padding: 30px 30px;
+    }
+
+    &__image {
+        width: 310px;
+        height: 210px;
+        background-color: rgb(37, 56, 162);
+        border-radius: 10px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__style {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+    }
+
+    &__skills {
+        margin-top: -5px;
+        font-style: italic;
+        font-family: 'Hind Madurai';
+        color: rgb(37, 56, 162);
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    &__github {
+        margin-top: 20px; 
+
+        &__link {
+            font-family: 'Hind Madurai';
+            color: rgb(37, 56, 162);
+            font-weight: 500;
+            cursor: pointer;
+        }
+    }
 }
 
-.modal__content {
-	width: 630px;
-	height: 688px;
-	border-radius: 10px;
-	background: white;
-	z-index: 999;
 
-	visibility: visible;
-	position: relative;
+@media screen and (min-width: 768px) {
+    .list__item {
+        font-size: 16px;
+    }
+
+    .realisations {
+
+        &__list {
+
+            &__icon {
+                width: calc(100% - 500px);
+                margin-bottom: 40px;
+            }
+        }
+    }
 }
 
-.modal__close__btn {
-	width: 24px;
-	height: 24px;
-	border: none;
-	background-color: white;
-	position: absolute;
-	top: 10px;
-	right: 10px;
-}
+@media screen and (min-width: 1024px) {
+    .header {
+        &__logo {
 
-.modal__title {
-	color: black;
-	font-family: 'work sans';
-	font-weight: 500;
-	position: absolute;
-	top: 60px;
-	left: 220px;
-}
+            &__menu {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 130px;
+            }
+        }
 
-.next__modal__btn {
-	font-family: 'syne';
-	font-weight: 700;
-	color: white;
-	background-color: #1D6154;
-	width: 237px;
-	border-radius: 60px;
-	border: 1px solid #1D6154;
-	padding: 10px 0px;
-	cursor: pointer;
-	position: absolute;
-	bottom: 50px;
-	left: 200px;
-}
+        &__content {
+            position: relative;
+        
+            &__title {
+                font-size: 25px;
+                position: absolute;
+                left: 0;
+            }
+        
+            &__text {
+                font-size: 20px;
+                margin-top: 120px;
+                position: absolute;
+                left: 0;
+                text-align: left;
+                width: calc(100% - 200px);
+            }
+        }
+    }
 
-.previous__modal__btn {
-	width: 50px;
-	height: 50px;
-	border: none;
-	background-color: white;
-	position: absolute;
-	top: 20px;
-	left: 10px;
+    .list__item {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+
+    .technologies {
+        margin-top: 180px;
+        position: relative;
+        
+        &__title {
+            position: absolute;
+            right: 10px;
+            font-size: 25px;
+        }
+        
+        &__list {
+            margin-top: 120px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: 150px;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+    }
+    
+    .services {
+        margin-top: 180px;
+        position: relative;
+        
+        &__title {
+            position: absolute;
+            left: 10px;
+            font-size: 25px;
+        }
+        
+        &__list {
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 120px;
+            padding-left: 100px;
+            padding-right: 100px;
+            width: calc(100% - 200px);
+        }
+    }
+
+    .realisations {
+        margin-top: 150px;
+        position: relative;
+        
+        &__title {
+            position: absolute;
+            right: 10px;
+            font-size: 25px;
+        }
+        
+        &__list {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: 150px;
+            flex-wrap: wrap;
+            gap: 50px;
+    
+            &__icon {
+                width: 280px;
+            }
+        }
+    }
+
+    .contact {
+        margin-top: 150px;
+        
+        &__title {
+            font-size: 25px;
+            margin-bottom: 50px;
+        }
+        
+        &__div {
+        
+            &__text {
+                font-size: 20px;
+            }
+        }
+    }
 }
